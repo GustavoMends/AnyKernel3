@@ -4,20 +4,19 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=
+kernel.string=Netero Kernel by Gustavo Mendes
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
-supported.versions=
-supported.patchlevels=
+device.name1=joyeuse
+supported.versions=12.0
 '; } # end properties
 
 # shell variables
-block=;
-is_slot_device=0;
+block=/dev/block/bootdevice/by-name/boot;
+is_slot_device=auto;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
 
